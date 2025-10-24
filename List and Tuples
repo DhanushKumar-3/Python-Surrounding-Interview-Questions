@@ -1,0 +1,54 @@
+# LIST AND TUPLES
+
+#1. print last 2 values in a list
+x = [1,2,3,4,5,6]
+print(x[-2:])
+# 2.print all elements in a list
+x = [11,12,13,14,15]
+print(x[:])
+# 3.print alternative elements without using the  for loop.
+x = [11,12,13,14,15,16,17,18,19,20]
+print(x[::2])
+# 4.print alternative elements using the  for loop.
+x = [11,12,13,14,15,16,17,18,19,20]
+for i in range(0,len(x),2):
+    print(x[i],end=',')
+# 5. Store 10,20,30,....980,990,1000 into a list.
+x = list(range(10,1001,10))
+print(x)
+# 6.  Take a list of 10 elements print elements in reverse order.
+x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+print(x[::-1])
+# 7. Take a list of 10 elements print elements in reverse order using for loop
+x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+for i in range(len(x)-1,-1,-1):
+    print(x[i],end='')
+# 8. Take a list of 10 elements print all elements using for loop
+x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+for  i in x:
+    print(i,end=',')
+#  9. Modify 2nd index element of list with 300
+x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+x[1] = 300
+print(x)
+# 10. Search an element in the list.
+x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# search element 60.
+if 60 in x:
+    print("Element is available in list")
+else:
+    print("Element is not available in list")
+#11. Delete an element from the list.
+x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+x.pop(2) # removes given index element
+print(x)
+x.remove(100) # removes the given element
+print(x)
+# 12. Insert an element to a list
+x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+x.insert(0,11) # insert given element as given index position
+print(x)
+# 13.  Printing nested list element
+x=[ (10,20), (30,40), (50,60) ] # printing 40
+print(x[1][1])
+print(x[-1][-1]) # print the last element of last nested list
